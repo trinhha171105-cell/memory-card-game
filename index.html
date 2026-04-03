@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Card Flip Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-page">
+    <section class="game-container">
+      <header class="game-header">
+        <h1>Memory Card Flip Game</h1>
+        <p>Ghép 4 cặp thẻ giống nhau để chiến thắng</p>
+      </header>
+
+      <section class="game-info" aria-label="Thông tin trò chơi">
+        <div class="info-box">
+          <span class="label">Moves:</span>
+          <span id="moveCount">0</span>
+        </div>
+
+        <button id="resetBtn" class="reset-btn">Reset Game</button>
+      </section>
+
+      <section class="card-grid" id="cardGrid" aria-label="Bảng thẻ game">
+      </section>
+
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
